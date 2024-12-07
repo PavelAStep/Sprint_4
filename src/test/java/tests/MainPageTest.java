@@ -2,7 +2,6 @@ package tests;
 
 import org.openqa.selenium.chrome.ChromeOptions;
 import pages.MainPage;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.openqa.selenium.WebDriver;
@@ -32,8 +31,7 @@ public class MainPageTest {
             "позвонить в поддержку по красивому номеру 1010.";
     private static final String EXPECTED_TEXT_CHARGER = "Самокат приезжает к вам с полной зарядкой. Этого хватает на " +
             "восемь суток — даже если будете кататься без передышек и во сне. Зарядка не понадобится.";
-    private static final String EXPECTED_TEXT_CANCELORDER = "Да, пока самокат не привезли. Штрафа не будет, " +
-            "объяснительной записки тоже не попросим. Все же свои.";
+    private static final String EXPECTED_TEXT_CANCELORDER = "Да, пока самокат не привезли. Штрафа не будет, объяснительной записки тоже не попросим. Все же свои.";
     private static final String EXPECTED_TEXT_MKADORDER = "Да, обязательно. Всем самокатов! И Москве, и Московской области.";
 
     private final String expectedText;
